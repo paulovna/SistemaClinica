@@ -8,7 +8,7 @@ export default function TopMenu() {
       <nav className="menu">
         <a href="#">Inicio</a>
         <div className="dropdown">
-          <a className="dropbtn" href="#">Pacientes ▾</a>
+          <a className="dropbtn" href="">Pacientes ▾</a>
           <div className="dropdown-content">
             <a href="#">Cadastrar paciente</a>
             <a href="#">Buscar paciente</a>
@@ -20,7 +20,12 @@ export default function TopMenu() {
         <a href="#">Relatórios</a>
         <a href="#">Administração</a>
         <a href="#">Ferramentas</a>
-        <a href="#">Configurações</a>
+        <div className="dropdown">
+          <a className="dropbtn" href="">Configurações ▾</a>
+          <div className="dropdown-content">
+            <a href="/banco-de-dados">Banco de Dados</a>
+          </div>
+        </div>
       </nav>
       <div className="usuario">Olá, Luzinete | <a href="#">Sair</a></div>
     </header>
