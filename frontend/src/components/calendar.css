@@ -1,0 +1,87 @@
+
+/* Estilização dos eventos por status */
+.event-agendado {
+  background-color: #3b82f6 !important; /* azul */
+  border: none !important;
+  color: white;
+}
+
+.event-confirmado {
+  background-color: #22c55e !important; /* verde */
+  border: none !important;
+  color: white;
+}
+
+.event-cancelado {
+  background-color: #ef4444 !important; /* vermelho */
+  border: none !important;
+  color: white;
+}
+
+/* Ajustes gerais de layout */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Calendário centralizado */
+.fc {
+  z-index: 1;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+
+/* Cabeçalho e barra de ferramentas */
+.fc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5rem;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.fc-button {
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.fc-button:hover {
+  background-color: #1d4ed8;
+}
+
+.fc-button-primary:not(:disabled):active {
+  background-color: #1e40af;
+}
+
+/* Melhor visibilidade das horas */
+.fc-timegrid-slot-label {
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* Estilo nos dias da semana */
+.fc-col-header-cell {
+  background-color: #e0f2fe;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+/* Tooltip dos eventos */
+.fc-event-title {
+  white-space: normal !important;
+  font-size: 0.85rem;
+}
