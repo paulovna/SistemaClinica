@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from backend.database import Base, engine
-from backend.routers import pacientes, medicos, agendamentos, whatsapp_bot, consultas, database_viewer
+from backend.routers import pacientes, agendamentos, consultas, database_viewer
 from fastapi.middleware.cors import CORSMiddleware
 
 Base.metadata.create_all(bind=engine)
@@ -20,8 +20,6 @@ app.add_middleware(
 )
 
 app.include_router(pacientes.router)
-app.include_router(medicos.router)
 app.include_router(agendamentos.router)
-app.include_router(whatsapp_bot.router)
 app.include_router(consultas.router)
 app.include_router(database_viewer.router)

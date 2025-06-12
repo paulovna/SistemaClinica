@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PaginaBase from '../layout/PaginaBase';
+import PaginaBase from '../../layout/PaginaBase';
 import './BancoDeDados.css';
 
 export default function BancoDeDados() {

@@ -10,7 +10,7 @@ export default function TopMenu() {
         <div className="dropdown">
           <a className="dropbtn" href="">Pacientes ▾</a>
           <div className="dropdown-content">
-            <a href="#">Cadastrar paciente</a>
+            <a href="/cadastrar-paciente">Cadastrar paciente</a>
             <a href="#">Buscar paciente</a>
             <a href="#">Importar CSV</a>
             <a href="#">Exportar CSV</a>
@@ -24,6 +24,7 @@ export default function TopMenu() {
           <a className="dropbtn" href="">Configurações ▾</a>
           <div className="dropdown-content">
             <a href="/banco-de-dados">Banco de Dados</a>
+            <a href="/tabelasbd">Tabelas</a>
           </div>
         </div>
       </nav>
